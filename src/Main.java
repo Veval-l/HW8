@@ -4,7 +4,6 @@ public class Main {
         task1();
         task2();
         task3();
-        task4();
 
     }
 
@@ -18,9 +17,9 @@ public class Main {
          */
         System.out.println("Задача 1");
 
-        int[] number = new int[3];
-        double[] variable = {1.57, 7.654, 9.986};
-        int[] apple = {4, 8, 0, 2, 1, 0};
+        int[] arr1 = new int[3];
+        double[] arr2 = {1.57, 7.654, 9.986};
+        int[] arr3 = {4, 8, 0, 2, 1, 0};
 
         System.out.println();
     }
@@ -31,25 +30,35 @@ public class Main {
          */
         System.out.println("Задача 2");
 
-        int[] number = new int[3];
-        number[0] = 1;
-        number[1] = 2;
-        number[2] = 3;
+        int[] arr1 = new int[3];
+        arr1[0] = 1;
+        arr1[1] = 2;
+        arr1[2] = 3;
         for (int n = 0; n < 3; n++) {
-            System.out.print(number[n] + ", ");
+            System.out.print(arr1[n]);
+            if (n != (arr1.length - 1)) {
+                System.out.print(", ");
+            }
         }
         System.out.println();
 
-    double[] variable = {1.57, 7.654, 9.986};
-        for(double i = 0; i < variable.length; i++) {
-            System.out.print(variable[(int) i] + ", ");
-    }
+
+    double[] arr2 = {1.57, 7.654, 9.986};
+        for (int n = 0; n < arr2.length; n++) {
+            System.out.print(arr2[n]);
+            if (n != (arr2.length - 1)) {
+                System.out.print(", ");
+            }
+        }
         System.out.println();
 
-    int[] apple = {4, 8, 0, 2, 1, 0};
-        for(int a = 0; a < apple.length; a++) {
-        System.out.print(apple[(int) a] + ", ");
-    }
+    int[] arr3 = {4, 8, 0, 2, 1, 0};
+        for (int n = 0; n < arr3.length; n++) {
+            System.out.print(arr3[n]);
+            if (n != (arr3.length - 1)) {
+                System.out.print(", ");
+            }
+        }
 
         System.out.println();
         System.out.println();
@@ -61,19 +70,38 @@ public class Main {
          */
         System.out.println("Задача 3");
 
+        int[] arr1 = new int[3];
+        arr1[0] = 1;
+        arr1[1] = 2;
+        arr1[2] = 3;
+        for (int n = arr1.length - 1; n >= 0; n--) {
+            System.out.print(arr1[n]);
+            if (n != 0) {
+                System.out.print(", ");
+            }
+        }
 
+        System.out.println();
 
-        System.out.println( );
-    }
-    static public void task4() {
-        /**
-         *
-         */
-        System.out.println("Задача 4");
+        double[] arr2 = {1.57, 7.654, 9.986};
+        for (int i = arr2.length - 1; i >= arr2.length; i--) {
+            System.out.print(arr2[i]);
+            if (i != 0) {
+                System.out.print(", ");
+            }
+        }
 
+        System.out.println();
 
+        char[] arr3 = {4, 8, 0, 2, 1, 0};
+        for (int p = arr1.length - 1; p >= 0; p--) {
+            System.out.print(arr1[p]);
+            if (p != 0) {
+                System.out.print(", ");
 
-        System.out.println( );
+                System.out.println();
+            }
+        }
     }
 
 }
